@@ -105,3 +105,37 @@ nav ul.show{
 }
 }
 /* navbar ended */
+
+
+/* tailbox 1 text area started */
+#text-container {
+    opacity: 0;
+    animation: fadeIn 5s forwards, darkenText 4s 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes darkenText {
+    0% {
+      color: #aa2d07; /* Initial light color */
+    }
+    100% {
+      color: #0b0b79; /* Final darker color */
+    }
+  }
+  /* tailbox 1 text area  ended*/
+
+
+
+/* tailbox 2 text area started */
+  .font-algerian {
+    font-family: 'Algerian', sans-serif;
+  }
+    /* tailbox 2 text area  ended*/
