@@ -104,10 +104,34 @@ nav ul.show{
     left: 0;
 }
 }
+
+/* logo animation */
+.logo img {
+    /* Set the initial rotation and transition */
+    transform-origin: center;
+    transition: transform 2s ease;
+  }
+
+  /* Define the rotating animation */
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotatey(720deg); /* 720deg for 2 rotations (360deg x 2) */
+    }
+  }
+
+  /* Apply the animation to the logo */
+    .rotate {
+        animation: rotateAnimation 20s linear infinite; /* 2s for 2 seconds duration */
+        animation-delay: 2s; /* Delay the animation by 15 seconds */  }
+
+
 /* navbar ended */
 
 
-/* tailbox 1 text area started */
+/* box 1 text area started */
 #text-container {
     opacity: 0;
     animation: fadeIn 5s forwards, darkenText 4s 2s forwards;
@@ -130,12 +154,45 @@ nav ul.show{
       color: #0b0b79; /* Final darker color */
     }
   }
-  /* tailbox 1 text area  ended*/
+
+  img:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+    transform: scale(1.05); /* Increase image size on hover */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition effects */
+  }
+  /* box 1 text area  ended*/
 
 
 
-/* tailbox 2 text area started */
+
+
+/* box 2 text area started */
   .font-algerian {
     font-family: 'Algerian', sans-serif;
   }
-    /* tailbox 2 text area  ended*/
+    /* box 2 text area  ended*/
+
+
+
+
+
+    /* box 3 started */
+    .border-2:hover {
+        transform: scale(1.05); /* Increase the card size on hover */
+        box-shadow: 0 4px 8px rgba(193, 80, 80, 0.1); /* Add a subtle shadow on hover */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+        background-color: whitesmoke;
+      }
+
+     
+
+      .border-2 {
+        /* Set the initial styles for the border on hover */
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
+      }
+      /* box 3 ended */
+
+
+     
+      
